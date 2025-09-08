@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid with Header & Footer</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        #container_box {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        
+        .box {
+            border: 1px solid black;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .grid-box {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid black;
+            gap: 2px;
+        }
+        
+        .part {
+            border: 1px solid gray;
+            background-size: cover;
+            background-position: center;
+        }
+        /* Example images */
+        
+        .box:nth-child(1) .part:nth-child(1) {
+            background-image: url("https://picsum.photos/id/1011/200/200");
+        }
+        
+        .box:nth-child(1) .part:nth-child(2) {
+            background-image: url("https://picsum.photos/id/1015/200/200");
+        }
+        
+        .box:nth-child(1) .part:nth-child(3) {
+            background-image: url("https://picsum.photos/id/1021/200/200");
+        }
+        
+        .box:nth-child(1) .part:nth-child(4) {
+            background-image: url("https://picsum.photos/id/1031/200/200");
+        }
+        
+        .box:nth-child(2) .part:nth-child(1) {
+            background-image: url("https://picsum.photos/id/1041/200/200");
+        }
+        
+        .box:nth-child(2) .part:nth-child(2) {
+            background-image: url("https://picsum.photos/id/1051/200/200");
+        }
+        
+        .box:nth-child(2) .part:nth-child(3) {
+            background-image: url("https://picsum.photos/id/1061/200/200");
+        }
+        
+        .box:nth-child(2) .part:nth-child(4) {
+            background-image: url("https://picsum.photos/id/1071/200/200");
+        }
+        
+        .box:nth-child(3) .part:nth-child(1) {
+            background-image: url("https://picsum.photos/id/1081/200/200");
+        }
+        
+        .box:nth-child(3) .part:nth-child(2) {
+            background-image: url("https://picsum.photos/id/1091/200/200");
+        }
+        
+        .box:nth-child(3) .part:nth-child(3) {
+            background-image: url("https://picsum.photos/id/1101/200/200");
+        }
+        
+        .box:nth-child(3) .part:nth-child(4) {
+            background-image: url("https://picsum.photos/id/1111/200/200");
+        }
+        
+        .box:nth-child(4) {
+            background-image: url("https://picsum.photos/id/1121/400/400");
+        }
+        
+        .box:nth-child(5) .part:nth-child(1) {
+            background-image: url("https://picsum.photos/id/1131/200/200");
+        }
+        
+        .box:nth-child(5) .part:nth-child(2) {
+            background-image: url("https://picsum.photos/id/1141/200/200");
+        }
+        
+        .box:nth-child(5) .part:nth-child(3) {
+            background-image: url("https://picsum.photos/id/1151/200/200");
+        }
+        
+        .box:nth-child(5) .part:nth-child(4) {
+            background-image: url("https://picsum.photos/id/1161/200/200");
+        }
+        
+        .box:nth-child(6) {
+            background-image: url("https://picsum.photos/id/1171/400/400");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Header
+    </header>
+
+    <div id="container_box">
+        <div class="box grid-box">
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+        </div>
+        <div class="box grid-box">
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+        </div>
+        <div class="box grid-box">
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box grid-box">
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+            <div class="part"></div>
+        </div>
+        <div class="box"></div>
+    </div>
+
+    <footer>
+        Nisha Kumari -> 6001342063
+    </footer>
+</body>
+
+</html>
